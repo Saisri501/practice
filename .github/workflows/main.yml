@@ -10,10 +10,10 @@ jobs:
   terraform:
     name: 'Terraform'
     env:
-      ARM_CLIENT_ID: ${{secrets.AZURE_CLIENTID}}
-      ARM_CLIENT_SECRET: ${{secrets.AZURE_SECRETID}}
-      ARM_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION}}
-      ARM_TENANT_ID: ${{secrets.AZURE_TENANTID}}
+      AZURE_CLIENTID: ${{secrets.AZURE_CLIENTID}}
+      AZURE_SECRETID: ${{secrets.AZURE_SECRETID}}
+      AZURE_SUBSCRIPTION: ${{secrets.AZURE_SUBSCRIPTION}}
+      AZURE_TENANTID: ${{secrets.AZURE_TENANTID}}
     runs-on: ubuntu-latest
     environment: dev
     
