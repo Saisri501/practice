@@ -1,4 +1,4 @@
-name: 'Terraform
+name: 'Terraform'
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   terraform:
     name: 'Terraform'
-    environment:
+    env:
       AZURE_CLIENTID: ${{secrets.AZURE_CLIENTID}}
       AZURE_SECRETID: ${{secrets.AZURE_SECRETID}}
       AZURE_SUBSCRIPTION: ${{secrets.AZURE_SUBSCRIPTION}}
