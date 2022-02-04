@@ -9,7 +9,7 @@ on:
 jobs:
   terraform:
     name: 'Terraform'
-    env:
+    environment:
       AZURE_CLIENTID: ${{secrets.AZURE_CLIENTID}}
       AZURE_SECRETID: ${{secrets.AZURE_SECRETID}}
       AZURE_SUBSCRIPTION: ${{secrets.AZURE_SUBSCRIPTION}}
